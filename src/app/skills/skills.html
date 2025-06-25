@@ -1,0 +1,52 @@
+<section id="skills" class="skills section light-background">
+
+    <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+        <h2>Skills</h2>
+    </div>
+
+    <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+            <div class="col-lg-6">
+                @for (skill of skills; track skill.id) {
+                @if(skill.id <= 7){ <div class="progress">
+                    <span class="skill">
+                        <span>{{skill.name}}</span>
+                        <i class="val">{{skill.precentage}}%</i>
+                    </span>
+                    <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" [attr.aria-valuenow]="skill.precentage"
+                            aria-valuemin="0" aria-valuemax="100" [style.width]="skill.precentage + '%'">
+                        </div>
+                    </div>
+            </div>
+            }
+
+            }
+        </div>
+
+        <div class="col-lg-6">
+            @for (skill of skills; track skill.id) {
+            @if(skill.id > 7){
+            <div class="progress">
+                <span class="skill">
+                    <span>{{skill.name}}</span>
+                    <i class="val">{{skill.precentage}}%</i>
+                </span>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" [attr.aria-valuenow]="skill.precentage"
+                        aria-valuemin="0" aria-valuemax="100" [style.width]="skill.precentage + '%'">
+                    </div>
+                </div>
+            </div>
+            }
+
+            }
+        </div>
+
+    </div>
+
+    </div>
+
+</section>
