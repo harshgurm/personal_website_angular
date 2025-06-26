@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './about.css'
 })
 export class About {
-  profile_image:string = "./images/my-profile.png";
+  profile_image:string = "./images/my-profile.webp";
   email:string = "harshgurm@gmail.com";
   total_experience = new Date().getFullYear() - 2016;
   teaching_experience = new Date().getFullYear() - 2023;
@@ -17,11 +17,11 @@ export class About {
             development and Agile related courses at George Brown College.
             I am also teaching online Full Stack development bootcamps to students at University of Calgary, Concordia
             University and Western University.
-            I am passionate about coding and I love to learn new language. I thrive on challenges! If I don’t know the
+            I am passionate about coding and I love to learn new languages. I thrive on challenges! If I don’t know the
             answer to a technical problem, I am able to research and implement the appropriate solution.`;
 
   profile_details = [
-    { title: "Software Development", description: this.total_experience + "+years of experience", link:""},
+    { title: "Software Development", description: this.total_experience + "+ years of experience", link:""},
     { title: "Teaching", description: this.teaching_experience + "+ years of experience", link:""},
     { title: "Degree/Diploma", description: "Computer Programming", link:""},
     { title: "Email", description: "harshgurm@gmail.com", link:""},

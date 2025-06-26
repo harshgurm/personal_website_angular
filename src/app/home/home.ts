@@ -15,7 +15,7 @@ export class Home {
   
   typeWriter:TypeWriter = inject(TypeWriter);
 
-  image_url = "./images/home-bg.png";
+  image_url = "./images/home-bg.webp";
 
   typedText$ = this.typeWriter
     .getTypewriterEffect(this.titles)
