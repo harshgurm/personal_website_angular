@@ -28,9 +28,8 @@ export class App {
 
   ngAfterViewInit() {
     const script = this.renderer.createElement('script');
-    script.src = './js/main.js'; // Or set script.text for inline JS
+    script.src = './js/main.js';
     script.onload = () => {
-      // console.log('External script loaded successfully!');
     };
     this.renderer.appendChild(this.document.body, script);
   }

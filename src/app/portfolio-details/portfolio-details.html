@@ -32,7 +32,9 @@
                     <h3>Project information</h3>
                     <ul>
                         <li><strong>Category</strong>: {{project?.category}}</li>
-                        <li><strong>Tech stack</strong>: {{project?.tech_stack}}</li>
+                        @if(project?.tech_stack){
+                            <li><strong>Tech stack</strong>: {{project?.tech_stack}}</li>
+                        }
                         @if(project?.link){
                             <li><strong>Link</strong>: <a [href]="project?.link" target="_blank">{{project?.link_text}}</a></li>
                         }

@@ -1,7 +1,7 @@
 import { Component, inject  } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { Project } from '../project';
-import { ProjectService } from '../project-service';
+import { Project } from '../interfaces/project';
+import { ProjectService } from '../services/project-service';
 
 @Component({
   selector: 'app-portfolio-details',

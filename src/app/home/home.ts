@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { TypeWriter } from '../type-writer';
+import { TypeWriter } from '../services/type-writer';
 import { map } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 

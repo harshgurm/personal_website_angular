@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Project } from './project';
+import { Project } from '../interfaces/project';
 
 @Injectable({
   providedIn: 'root',
@@ -10,16 +10,6 @@ export class ProjectService {
   project_details: Project[] = [
     {
       id: 1,
-      title: 'Cloudlit Tech Inc.',
-      category: 'Websites',
-      tech_stack: 'HTML, CSS, BootStrap, Nuxt.js',
-      link: 'https://cloudlittech.com/',
-      link_text: 'Cloudlit Tech Inc.',
-      description: 'Cloudlit Tech Inc. is developing a cutting-edge digital platform designed to transform how teams collaborate, innovate, and grow',
-      images: ['./images/portfolio/iphone-screen.png'],
-    },
-    {
-      id: 2,
       title: 'Google Cloud Digital Leader',
       category: 'Certificates',
       tech_stack: 'Google Cloud Services',
@@ -29,7 +19,7 @@ export class ProjectService {
       images: ['./images/certificates/CloudDigitalLeader.jpg'],
     },
     {
-      id: 3,
+      id: 2,
       title: 'Bell University - Cloud Architecture',
       category: 'Certificates',
       tech_stack: 'Cloud Computing',
@@ -37,7 +27,27 @@ export class ProjectService {
       link_text: 'Cloud Computing - Cloud Architecture',
       description: 'A Cloud Digital Leader can articulate the capabilities of Google Cloud core products and services and how they benet organizations. They can also describe common business use cases and how cloud solutions support an enterprise.',
       images: ['./images/certificates/BellUGraduate.jpg'],
-    }
+    },
+    {
+      id: 3,
+      title: 'Certified SAFe® 6 Product Owner/Product Manager',
+      category: 'Certificates',
+      tech_stack: '',
+      link: '',
+      link_text: '',
+      description: '',
+      images: ['./images/certificates/agile_certification.PNG'],
+    },
+    {
+      id: 1,
+      title: 'Cloudlit Tech Inc.',
+      category: 'Websites',
+      tech_stack: 'HTML, CSS, BootStrap, Nuxt.js',
+      link: 'https://cloudlittech.com/',
+      link_text: 'Cloudlit Tech Inc.',
+      description: 'Cloudlit Tech Inc. is developing a cutting-edge digital platform designed to transform how teams collaborate, innovate, and grow',
+      images: ['./images/portfolio/iphone-screen.png'],
+    },
   ];
 
   getProject(project_id: number): Project | undefined {
