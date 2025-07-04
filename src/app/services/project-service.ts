@@ -39,7 +39,7 @@ export class ProjectService {
       images: ['./images/certificates/agile_certification.PNG'],
     },
     {
-      id: 1,
+      id: 4,
       title: 'Cloudlit Tech Inc.',
       category: 'Websites',
       tech_stack: 'HTML, CSS, BootStrap, Nuxt.js',
