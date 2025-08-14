@@ -15,7 +15,8 @@ export class ProjectService {
       tech_stack: 'Google Cloud Services',
       link: '',
       link_text: 'Cloud Digital Leader',
-      description: 'A Cloud Digital Leader can articulate the capabilities of Google Cloud core products and services and how they benet organizations. They can also describe common business use cases and how cloud solutions support an enterprise.',
+      description:
+        'A Cloud Digital Leader can articulate the capabilities of Google Cloud core products and services and how they benet organizations. They can also describe common business use cases and how cloud solutions support an enterprise.',
       images: ['./images/certificates/CloudDigitalLeader.jpg'],
     },
     {
@@ -25,7 +26,8 @@ export class ProjectService {
       tech_stack: 'Cloud Computing',
       link: '',
       link_text: 'Cloud Computing - Cloud Architecture',
-      description: 'A Cloud Digital Leader can articulate the capabilities of Google Cloud core products and services and how they benet organizations. They can also describe common business use cases and how cloud solutions support an enterprise.',
+      description:
+        'A Cloud Digital Leader can articulate the capabilities of Google Cloud core products and services and how they benet organizations. They can also describe common business use cases and how cloud solutions support an enterprise.',
       images: ['./images/certificates/BellUGraduate.jpg'],
     },
     {
@@ -45,8 +47,20 @@ export class ProjectService {
       tech_stack: 'HTML, CSS, BootStrap, Nuxt.js',
       link: 'https://cloudlittech.com/',
       link_text: 'Cloudlit Tech Inc.',
-      description: 'Cloudlit Tech Inc. is developing a cutting-edge digital platform designed to transform how teams collaborate, innovate, and grow',
+      description:
+        'Cloudlit Tech Inc. is developing a cutting-edge digital platform designed to transform how teams collaborate, innovate, and grow',
       images: ['./images/portfolio/iphone-screen.png'],
+    },
+    {
+      id: 5,
+      title: 'Customer Management System',
+      category: 'Websites',
+      tech_stack: 'Angular20, Node24, Bootstrap5, HTML, CSS',
+      link: 'https://github.com/harshgurm/angular_node_user_crud',
+      link_text: 'Customer Management System',
+      description:
+        'Developed a Customer Management System that allows authenticated users to create, update, and delete customer records. New users are required to sign up and log in, as only authenticated users can access the CMS',
+      images: ['./images/portfolio/user_management_portal.PNG'],
     },
   ];
 
