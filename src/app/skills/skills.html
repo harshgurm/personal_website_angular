@@ -10,7 +10,7 @@
 
             <div class="col-lg-6">
                 @for (skill of skills; track skill.id) {
-                @if(skill.id <= 7){ <div class="progress">
+                @if(skill.id <= 9){ <div class="progress">
                     <span class="skill">
                         <span>{{skill.name}}</span>
                         <i class="val">{{skill.precentage}}%</i>
@@ -28,7 +28,7 @@
 
         <div class="col-lg-6">
             @for (skill of skills; track skill.id) {
-            @if(skill.id > 7){
+            @if(skill.id > 9){
             <div class="progress">
                 <span class="skill">
                     <span>{{skill.name}}</span>
